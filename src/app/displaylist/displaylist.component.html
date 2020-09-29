@@ -1,0 +1,5 @@
+<div>
+    <input #newItem>
+        <button (click)="addItem(newItem.value)">Add Item</button>
+</div>
+<ul><li *ngFor="let item of list">{{item }} <button (click)="removeItem(2)"> Delete</button></li></ul>
